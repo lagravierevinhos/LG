@@ -3,75 +3,240 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>La Gravière Vinhos</title>
 
-<meta http-equiv="refresh" content="6;url=https://lagravierevinhos.lojavirtualnuvem.com.br">
+<meta name="description" content="Vinhos selecionados para quem aprecia bons momentos.">
+
+<meta http-equiv="refresh" content="15;url=https://lagravierevinhos.lojavirtualnuvem.com.br">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#121212;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+
+font-family:'Inter',sans-serif;
+
+background:
+linear-gradient(rgba(20,18,18,.82),rgba(20,18,18,.82)),
+url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+min-height:100vh;
+
+padding:30px;
+
 }
 
 .card{
 
-    width:90%;
-    max-width:700px;
-    background:#1f1f1f;
-    padding:50px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 0 30px rgba(0,0,0,.4);
+max-width:760px;
+width:100%;
+
+background:rgba(30,20,20,.75);
+
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:55px;
+
+text-align:center;
+
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.logo{
+
+font-family:'Cinzel',serif;
+
+font-size:52px;
+
+color:#D4AF37;
+
+margin-bottom:8px;
+
+}
+
+.subtitulo{
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+font-size:14px;
+
+color:#d0c3a2;
+
+margin-bottom:35px;
 
 }
 
 h1{
 
-    color:#C89B3C;
-    margin-bottom:15px;
+font-size:34px;
+
+margin-bottom:20px;
+
+font-family:'Cinzel',serif;
 
 }
 
 p{
 
-    font-size:18px;
-    line-height:1.7;
+font-size:19px;
+
+line-height:1.8;
+
+color:#efefef;
+
+margin-bottom:18px;
+
+}
+
+.destaque{
+
+color:#D4AF37;
+
+font-weight:600;
+
+}
+
+.botoes{
+
+margin-top:40px;
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:18px;
 
 }
 
 .botao{
 
-display:inline-block;
-margin-top:30px;
-padding:18px 35px;
-background:#C89B3C;
-color:#111;
-font-weight:bold;
 text-decoration:none;
+
+padding:16px 34px;
+
 border-radius:10px;
 
+font-weight:600;
+
+transition:.25s;
+
+font-size:17px;
+
 }
 
-.botao:hover{
+.primario{
 
-opacity:.9;
+background:#D4AF37;
+
+color:#231a13;
 
 }
 
-small{
+.primario:hover{
 
-display:block;
-margin-top:25px;
-opacity:.7;
+transform:translateY(-3px);
+
+}
+
+.secundario{
+
+border:2px solid #D4AF37;
+
+color:#D4AF37;
+
+}
+
+.secundario:hover{
+
+background:#D4AF37;
+
+color:#231a13;
+
+}
+
+.rodape{
+
+margin-top:40px;
+
+font-size:14px;
+
+color:#cccccc;
+
+line-height:1.8;
+
+}
+
+hr{
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.15);
+
+margin:35px 0;
+
+}
+
+@media(max-width:700px){
+
+.logo{
+
+font-size:40px;
+
+}
+
+.card{
+
+padding:35px 25px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+p{
+
+font-size:17px;
+
+}
+
+.botao{
+
+width:100%;
+
+}
 
 }
 
@@ -83,28 +248,67 @@ opacity:.7;
 
 <div class="card">
 
-<h1>🍷 La Gravière Vinhos</h1>
+<div class="logo">
+La Gravière
+</div>
+
+<div class="subtitulo">
+VINHOS SELECIONADOS
+</div>
+
+<h1>Nosso endereço mudou.</h1>
 
 <p>
-Nosso endereço mudou!
+A <span class="destaque">La Gravière Vinhos</span> continua oferecendo os mesmos rótulos cuidadosamente selecionados, agora em um novo endereço.
 </p>
 
 <p>
-A loja continua funcionando normalmente.
+Em alguns segundos você será redirecionado automaticamente, ou pode escolher um dos canais abaixo.
 </p>
 
-<a class="botao"
+<div class="botoes">
+
+<a class="botao primario"
 href="https://lagravierevinhos.lojavirtualnuvem.com.br">
 
-Entrar na loja
+🍷 Entrar na Loja
 
 </a>
 
-<small>
+<a class="botao secundario"
+href="https://wa.me/5547992216323">
 
-Você será redirecionado automaticamente em alguns segundos.
+💬 WhatsApp
 
-</small>
+</a>
+
+<a class="botao secundario"
+href="https://lista.mercadolivre.com.br/_CustId_778940372">
+
+🛒 Mercado Livre
+
+</a>
+
+<a class="botao secundario"
+href="https://instagram.com/la.graviere">
+
+📷 Instagram
+
+</a>
+
+</div>
+
+<hr>
+
+<div class="rodape">
+
+Você será redirecionado automaticamente em aproximadamente <strong>15 segundos</strong>.
+
+<br><br>
+
+Obrigado por visitar a <strong>La Gravière Vinhos</strong>. 🍷
+
+</div>
 
 </div>
 
